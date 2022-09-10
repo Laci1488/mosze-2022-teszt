@@ -4,19 +4,19 @@ constexpr int N_ELEMENTS = 100;
 
 int main()
 {
-    int *b = new int[NELEMENTS];   //hibás megnevezés
-    std::cout << '1-100 ertekek duplazasa'   //stringeket ""-el kell megadni (esetleg endl a végére)
-    for (int i = 0;)   //hiányos feltétel
+    int *b = new int[N_ELEMENTS];   //hibás megnevezés
+    std::cout << "1-100 ertekek duplazasa" << std::endl;   //stringeket ""-el kell megadni (esetleg endl a végére)
+    for (int i = 1; i <= N_ELEMENTS; i++)   //hiányos feltétel
     {
-        b[i] = i * 2;   //értékek kiírattatása lehet ebbe a ciklusba
+        b[i] = i * 2;
+        std::cout << "Ertek: " << b[i] << std::endl;   //értékek kiírattatása lehet ebbe a ciklusba
     }
-    for (int i = 0; i; i++)   //felesleges for ciklus
-    {
-        std::cout << "Ertek:"
-    }    
+    
+    //felesleges for ciklus
+    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)   //hibás feltétel
+    for (int i = 1; i <= N_ELEMENTS; i++)   //hibás feltétel
     {
         atlag += b[i]
     }
